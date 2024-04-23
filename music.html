@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
+    
+        <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+        <!-- <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script> -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>App papy</title>
+        <link rel="stylesheet" href="static/music.css">
+        <link rel="stylesheet" href="static/main.css">
+    </head>
+    
+<body>
+
+    <nav id="header">
+        <a  class="separateur_header"></a><a href="index.html"><img class="img-header" src="static/home.png" alt="Home logo"></a>
+        <a class="a-txt" href="index.html">Accueil</a>
+        <a class="separateur_header"></a><a href="music.html"><img class="img-header"src="static/musical-note.png"   alt="notre_projet"></a>
+        <a  class="a-txt"  href="music.html">Musique</a>
+        <a  class="separateur_header"></a><img class="img-header" onclick="alert('fonctionnalité musique indisponible')" src="static/video.png" alt="Home logo">
+        <a class="a-txt" onclick="alert('fonctionnalité musique indisponible')" href="">Vidéo</a>
+        <a  class="separateur_header"></a>
+    </nav>
+    
+
+      <div id="txt-welcome_music">
+        <br><br><br><br>
+        <h2> Ceci est la partie musicale de mon appli </h2> <br><br><br><br>
+        <h3>Je m'excuse mais pour des raisons de simplicité niveau codage j'ai utilisé des ressources de géants du streaming musicale pour cette page, ce qui sognifie que je n'ai pas la main sur tout et donc il y a des <strong> liens et autres pubs de temps en temps</strong> je m'excuse par avance... <br> Des fois il te proposera de t'abboner ou quelque chose dans ce genre : tu as juste à attendre 15/20s et le lecteur reviendra automatiquement ! </h3>
+    
+        <h3>Tout ce que tu as à faire ici c'est cliquer soit <strong> directement sur le titre que tu veux, soit sur le bouton lecture (fleche verte)</strong></h3>
+    
+    </div>
+    <a href="#bob_marley"><button class="button-30" id="button100" role="button">Bob Marley</button></a>
+    <a href="#queen"><button class="button-30" id="button200"role="button2">Queen</button></a>
+    <a href="#collins"><button class="button-30"id="button300"role="button3">Phill Colins</button></a>
+    <a href="#elthon"><button class="button-30"id="button400"role="button3">Elthon John</button></a>
+  
+
+    <a href="#bob_marley"><button class="button-31" id="button101" role="button">Année 60/70</button></a>
+    <a href="#annee80"><button class="button-31" id="button201"role="button2">Année 80</button></a>
+    <a href="#annee90"><button class="button-31"id="button301"role="button3">Année 90</button></a>
+    <button class="button-31"id="button401"role="button3">Inoubliables</button>
+
+    <!-- ARTISTE  -->
+
+    <!-- mix bob marley -->
+    <iframe id="bob_marley" width="50%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1791833472&color=%2300ff0b&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"></div>
+
+    <!-- mix Queen  -->
+    <iframe id="queen" width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/833528744&color=%2300ff0b&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"></div>
+
+    <!-- mix Phil collins -->
+    <iframe id="collins"width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/818514063&color=%2300ff0b&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"></div>
+
+    <!-- mix elthon john -->
+    <iframe id="elthon"  width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1198016293&color=%2300ff0b&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"></div>
+
+    <!-- COMPILS -->
+<!-- annee 60 -->
+    <iframe id="annee60-70" width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/788973423&color=%2300ff0b&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"></div>
+
+    <!-- année 80 -->
+    <iframe id="annee80" width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1379860090&color=%2300ff0b&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"></div>
+
+    <!-- année 90 -->
+    <iframe id="annee90" width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/756130710&color=%2300ff0b&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"></div>
+    
+    <!-- inoubliables -->
+
+
+</body>    
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
+
+    <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+    <!-- <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App papy</title>
+    <link rel="stylesheet" href="static\main.css">
+</head>
+
+
+<body>
+  <nav id="header">
+    <a  class="separateur_header"></a><a href="index.html"><img class="img-header" src="static/home.png" alt="Home logo"></a>
+    <a class="a-txt" href="index.html">Accueil</a>
+    <a class="separateur_header"></a><a href="music.html"><img class="img-header"src="static/musical-note.png"   alt="notre_projet"></a>
+    <a  class="a-txt"  href="music.html">Musique</a>
+    <a  class="separateur_header"></a><img class="img-header"  src="static/video.png" alt="Home logo">
+    <a class="a-txt" onclick="alert('fonctionnalité musique indisponible')" href="">Vidéo</a>
+    <a  class="separateur_header"></a>
+</nav>
+
+  <div id="txt-welcome">
+    <h1>Salut papy </h1>
+    <br><br><br>
+    <h2> Bienvenue sur la seconde version de mon appli pour toi ! </h2>
+  
+    <div id="tu-trouveras">
+    <h3> <strong> Dans cette nouvelle version tu trouveras : </strong></h3>
+  
+    <li><strong>Un lecteur de musique</strong></li>
+    <ol>pour t'écouter un petit album de temps en temps</ol>
+    <li><strong>Un lecteur vidéo</li>
+    <ol>pour regarder tes émissions favorites </ol>
+
+  </div>
+  <div id="txt-description">
+    <p>Tout ce que tu as à faire c'est cliquer sur les boutons en haut de cette fenètre pour allez sur la page que tu veux !</p>
+  </div>
+  </div>
+  <div id="txt-description2">
+    <p>Pour ensuite choisir quelle musique tu veux écouter, quel vidéo lancer ou quel site web consulter ! </p>
+  
+  <p id="txt_lien_web">Clique sur un des bouttons ce dessous pour t'enmenner sur le site que tu veux !</p>
+  </div>
+<!-- liste de bouttons pour emmener vers différents sites web  -->
+
+<button class="button-3" role="button" ><a target="_blank" href="https://lequipe.fr">L'équipe</a></button>
+<button class="button-3" role="button" ><a target="_blank" href="https://www.lefigaro.fr/">Le Figaro</a></button>
+<button class="button-3" role="button" ><a  target="_blank"href="https://www.francetvinfo.fr/">franceinfo</a></button>
+<button class="button-3" role="button" ><a target="_blank" href="https://www.ouest-france.fr/normandie/caen-14000/">Ouest France</a></button>
+
+<a target="_blank" href="https://lequipe.fr"><img src="static/lequipe.png" id="logo1"class="logo_lien"></a>
+<a target="_blank" href="https://www.lefigaro.fr/"><img src="static/figaro.png" id="logo2"class="logo_lien"></a>
+<a  target="_blank"href="https://www.francetvinfo.fr/"><img src="static/franceinfo.png" id="logo3"class="logo_lien"></a>
+<a target="_blank" href="https://www.ouest-france.fr/normandie/caen-14000/"><img src="static/ouest france.png" id="logo4" class="logo_lien"></a>
+
+<!--   
+    <video
+    id="my-video1"
+    class="video-js"
+    controls
+    preload="auto"
+    width="888"
+    height="500"
+    poster="Capture d’écran 2024-04-19 à 16.47.59.png"
+    data-setup="{}">
+
+    <source src="J'VAIS TE FAIRE COURIR LE LAPIN ! (Party Animal).mp4" type="video/mp4" />
+  
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a
+      web browser that
+      <a href="https://videojs.com/html5-video-support/" target="_blank"
+        >supports HTML5 video</a
+      >
+    </p>
+  </video> 
+-->
+
+</body>
+
+<script src="static/script.js"></script>
+<script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+</html>

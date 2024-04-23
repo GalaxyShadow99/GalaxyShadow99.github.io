@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
+
+    <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+    <!-- <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App papy</title>
+    <link rel="stylesheet" href="static\main.css">
+</head>
+
+
+<body>
+  <nav id="header">
+    <a  class="separateur_header"></a><a href="index.html"><img class="img-header" src="/static/home.png" alt="Home logo"></a>
+    <a class="a-txt" href="index.html">Accueil</a>
+    <a class="separateur_header"></a><a href="music.html"><img class="img-header"src="/static/musical-note.png"   alt="notre_projet"></a>
+    <a  class="a-txt"  href="music.html">Musique</a>
+    <a  class="separateur_header"></a><a href="video.html" ><img class="img-header"  src="/static/video.png" alt="Home logo"></a>
+    <a class="a-txt" href="video.html">Vidéo</a>
+    <a  class="separateur_header"></a>
+</nav>
+
+  <div id="txt-welcome">
+    <h1>Vidéo </h1>
+    <br><br><br>
+    <h2> Bienvenue sur la partie vidéo de l'app ! </h2> <br><br><br>
+    <br><br><br><br>
+    <p id="#txt-welcome1">Ici tu as juste à cliquer sur le nom ou la vidéo que j'ai chargé à l'avance pour qu'elle se lance direct pour toi ! </p>
+  </div>
+
+    
+  <a href="#reportage_1"><button class="button-29" id="button1" role="button">Reportage 1</button></a>
+  <a href="#reportage_2"><button class="button-29" id="button2"role="button2">Série 2</button></a>
+  <a href="#reportage_3"><button class="button-29"id="button3"role="button3">Film 3</button></a>
+  <a href="#reportage_1"><button class="button-29"id="button4"role="button3">Souvenir 4</button></a>
+
+<!-- Template d'un reportage/film/série... -->
+
+  <div id="reportage_1">
+    <h2>Titre de la section </h2> 
+    <p>Description du film ou de la série, la description pourra être longue comme ça au max hjjjjjjjjjjjjjjjjjjjjjjjjjj jjjjjjjjjj jjjjjj  jjjjjjjj jjjjjjjjjjj jjjjjjjjj jjjjjjjjjjjjjjjj jjjjjjjjjjjj jjjjjjjjjjjj jjjkp>
+
+  </div>
+  <video id="my-video1" class="video-js" controls preload="auto" width="888" height="500" poster="/static/Capture d’écran 2024-04-19 à 16.47.59.png" data-setup="{}"> <source src="static\J'VAIS TE FAIRE COURIR LE LAPIN ! (Party Animal).mp4" type="video/mp4" />
+  </video>
+
+  <div id="reportage_2">
+    <h2>Titre de la section </h2> 
+    <p>Description du film ou de la série, la description pourra être longue comme ça au max hjjjjjjjjjjjjjjjjjjjjjjjjjj jjjjjjjjjj jjjjjj  jjjjjjjj jjjjjjjjjjj jjjjjjjjj jjjjjjjjjjjjjjjj jjjjjjjjjjjj jjjjjjjjjjjj jjjkp>
+
+  </div>
+  <video id="my-video2" class="video-js" controls preload="auto" width="888" height="500" poster="/static/Capture d’écran 2024-04-19 à 16.47.59.png" data-setup="{}"> <source src="static\J'VAIS TE FAIRE COURIR LE LAPIN ! (Party Animal).mp4" type="video/mp4" />
+  </video>
+
+  <div id="reportage_3">
+    <h2>Titre de la section </h2> 
+    <p>Description du film ou de la série, la description pourra être longue comme ça au max hjjjjjjjjjjjjjjjjjjjjjjjjjj jjjjjjjjjj jjjjjj  jjjjjjjj jjjjjjjjjjj jjjjjjjjj jjjjjjjjjjjjjjjj jjjjjjjjjjjj jjjjjjjjjjjj jjjkp>
+      <style>
+        .video-row {
+          position: absolute;
+          top: 15%;
+          left: 27%;
+          width: 70%;
+          display: flex;
+          white-space: nowrap; /* Empêche le retour à la ligne des vidéos */
+        }
+        .video-row2 {
+          position: absolute;
+          top: 60%;
+          left: 27%;
+          width: 70%;
+          display: flex;
+          white-space: nowrap; /* Empêche le retour à la ligne des vidéos */
+        }
+
+        .video-container {
+          flex: 1 0 auto; /* Permet à la vidéo de se redimensionner pour s'adapter à la fenêtre */
+          margin: 0 10px;
+        }
+      </style>
+<div class="video-row">
+  <div class="video-container">
+    <video id="video1" class="video-js vjs-default-skin" controls preload="auto" width="444" height="250">
+      <source src="static\J'VAIS TE FAIRE COURIR LE LAPIN ! (Party Animal).mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <div class="video-container">
+    <video id="video2" class="video-js vjs-default-skin" controls preload="auto" width="444" height="250">
+      <source src="static\J'VAIS TE FAIRE COURIR LE LAPIN ! (Party Animal).mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
+<div class="video-row2">
+  <div class="video-container">
+    <video id="video1" class="video-js vjs-default-skin" controls preload="auto" width="444" height="250">
+      <source src="static\J'VAIS TE FAIRE COURIR LE LAPIN ! (Party Animal).mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <div class="video-container">
+    <video id="video2" class="video-js vjs-default-skin" controls preload="auto" width="444" height="250">
+      <source src="static\J'VAIS TE FAIRE COURIR LE LAPIN ! (Party Animal).mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
+</div>
+
+
+<script src="https://vjs.zencdn.net/7.14.3/video.min.js"></script>
+<script>
+  // Initialize Video.js for each video element
+  const videos = document.querySelectorAll('video');
+  videos.forEach(video => {
+    videojs(video);
+  });
+
+  function scrollVideos(direction) {
+    const videoRow = document.querySelector('.video-row');
+    const scrollAmount = 315; // Vous pouvez ajuster cette valeur selon votre besoin
+    if (direction === 'left') {
+      videoRow.scrollLeft -= scrollAmount;
+    } else if (direction === 'right') {
+      videoRow.scrollLeft += scrollAmount;
+    }
+  }
+</script>
+
+<!-- 
+  <video
+    id="my-video1"
+    class="video-js"
+    controls
+    preload="auto"
+    width="888"
+    height="500"
+    poster="/static/Capture d’écran 2024-04-19 à 16.47.59.png"
+    data-setup="{}">
+
+    <source src="static\J'VAIS TE FAIRE COURIR LE LAPIN ! (Party Animal).mp4" type="video/mp4" />
+  
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a
+      web browser that
+      <a href="https://videojs.com/html5-video-support/" target="_blank"
+        >supports HTML5 video</a
+      >
+    </p>
+  </video>  -->
+
+
+</body>
+
+
+<script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+<script src="/static/script.js"></script>
+</html>
