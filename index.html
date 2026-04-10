@@ -3,29 +3,74 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Redirection...</title>
+  <title>Vers xune.app...</title>
   <style>
     body {
       margin: 0;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       height: 100vh;
-      background: #0d0d0d;
-      color: #ffffff;
-      font-family: sans-serif;
-      font-size: 1.2rem;
+      background: #0a0a0a;
+      color: #fff;
+      font-family: 'Segoe UI', Roboto, sans-serif;
+      overflow: hidden;
+    }
+
+    /* Le cercle de chargement animé */
+    .loader {
+      width: 60px;
+      height: 60px;
+      border: 3px solid rgba(255, 255, 255, 0.1);
+      border-top: 3px solid #3b82f6; /* Bleu moderne */
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      box-shadow: 0 0 15px rgba(59, 130, 246, 0.5);
+      margin-bottom: 20px;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .text {
+      font-weight: 300;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      opacity: 0.8;
+      animation: pulse 1.5s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 0.5; }
+      50% { opacity: 1; }
+    }
+
+    #countdown {
+      font-weight: bold;
+      color: #3b82f6;
     }
   </style>
 </head>
 <body>
-  <p>Redirection dans <span id="countdown">2</span>s...</p>
+
+  <div class="loader"></div>
+  <div class="text">
+    Redirection vers mon portfolio personnel  <span id="site">xune.app</span> dans <span id="countdown">3</span>s
+  </div>
+
   <script>
-    let t = 2;
+    let t = 3;
     const el = document.getElementById('countdown');
+    
     const interval = setInterval(() => {
       t--;
-      el.textContent = t;
+      if (t >= 0) {
+        el.textContent = t;
+      }
       if (t <= 0) {
         clearInterval(interval);
         window.location.replace('https://xune.app');
